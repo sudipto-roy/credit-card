@@ -1,0 +1,117 @@
+:root {
+  --grey: #ccc;
+  --flipkartblue: #2874f0;
+  --white: #fff;
+}
+
+body, html, header, footer, main, p {
+  margin: 0;
+  padding: 0;
+  display: block;
+  box-sizing: border-box;
+  font-family: calibri; 
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+body, html {
+  min-height: 100%;
+  position: relative; }
+
+header, footer {
+  height: 50px;
+  background-color: #ddd; }
+
+main {
+  min-height: calc(100% - 100px); }
+
+form {
+  display: block;
+  margin: 0 auto;
+  max-width: 350px;
+  width: 90%;
+}
+
+input[type='button'],
+input[type='submit'],
+button {
+  width: 200px;
+  padding: 10px;
+  margin: 10px 10px 10px 0;
+  background: var(--flipkartblue);
+  color: var(--white);
+  cursor: pointer;
+  text-transform: uppercase;
+  clear: both;
+  opacity: 0.8;
+}
+
+input[type='button']:hover,
+input[type='submit']:hover,
+button:hover {
+  opacity: 1;
+}
+
+input[type='button']:disabled,
+input[type='submit']:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+input[type='button']:disabled:hover,
+input[type='submit']:disabled:hover {
+  opacity: 0.4;
+}
+
+.formfield {
+  margin: 10px 0;
+  min-height: 60px;
+}
+
+.formfield label {
+  display: block;
+}
+
+.formfield input{
+  border-bottom: 1px solid var(--grey);
+  width: 100%;
+  margin: 5px 0;
+}
+
+.formfield select {
+  width: 60px;
+  display: inline-block;
+  margin: 5px 0;
+}
+
+.cvv-number,
+.cc-expiry {
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.hide {
+  display: none;
+}
+
+.cc-number {
+  position: relative;
+}
+
+.card-type {
+  position: absolute;
+  top: 22px;
+  right: 0;
+  background: var(--flipkartblue);
+  color: var(--white);
+}
+
+.saved-cards {
+  max-width: 500px;
+  width: 90%;
+  margin: 0 auto;
+}

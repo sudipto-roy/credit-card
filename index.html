@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<header>
+			space for header
+		</header>
+		<main id="mainTag">
+			<form name="ccDetailsForm" id="ccDetailsForm" method="post" action="index.html" class="cc-details-form">
+				<div class="formfield cc-number">
+					<label for="ccNumber">Card Number</label>
+					<input type="text" name="ccNumber" id="ccNumber" maxlength="19">
+					<span id="cardType" class="card-type"></span>
+				</div>
+				<div class="formfield cc-expiry">
+					<label for="ccExpiryMonth">Expiry Date</label>
+					<select class="cc-expiry-month" name="ccExpiryMonth" id="ccExpiryMonth" disabled="disabled">
+						<option value="">MM</option>
+						<option value="01">01</option>
+						<option value="02">02</option>
+						<option value="03">03</option>
+						<option value="04">04</option>
+						<option value="05">05</option>
+						<option value="06">06</option>
+						<option value="07">07</option>
+						<option value="08">08</option>
+						<option value="09">09</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+					</select>
+					<select class="cc-expiry-year" name="ccExpiryYear" id="ccExpiryYear" disabled="disabled">
+						<option value="">YYYY</option>
+						<option value="2018">2018</option>
+						<option value="2019">2019</option>
+						<option value="2020">2020</option>
+						<option value="2021">2021</option>
+						<option value="2022">2022</option>
+						<option value="2023">2023</option>
+						<option value="2024">2024</option>
+					</select>
+				</div>
+				<div class="formfield cvv-number">
+					<label for="cvvNumber">CVV Number</label>
+					<input type="text" name="cvvNumber" id="cvvNumber" disabled="disabled" maxlength="4" title="only 3 or 4 digit number">
+				</div>
+				<input type="submit" name="submitCCDetails" id="submitCCDetails" value="submit" disabled="disabled">
+			</form>
+			<div class="saved-cards" id="savedCards">
+			</div>
+		</main>
+		<footer>
+			space for footer
+		</footer>
+
+		<script type="text/javascript" src="./js/App.js"></script>
+		<script type="text/javascript" src="./js/CreditCard.js"></script>
+		<script type="text/javascript" src="./js/app.custom.js"></script>
+		<script type="text/javascript" src="./js/init.js"></script>
+	</body>
+</html>
